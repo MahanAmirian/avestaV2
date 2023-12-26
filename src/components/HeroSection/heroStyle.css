@@ -1,0 +1,45 @@
+.imageSection {
+  /* background-color: red;    */
+  height: max-content;
+  background-image: url(../../static/Polygon4.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.hexagon {
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+.hexagon {
+  -webkit-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+}
+
+.flip-horizontal-bottom {
+  border: 0px;
+}
+.flip-horizontal-bottom:hover {
+	-webkit-animation: flip-horizontal-bottom 1.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both ;
+	        animation: flip-horizontal-bottom 1.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both ;
+}
+ @-webkit-keyframes flip-horizontal-bottom {
+  0% {
+    -webkit-transform: rotateX(0);
+            transform: rotateX(0);
+  }
+  100% {
+    -webkit-transform: rotateX(-180deg);
+            transform: rotateX(-180deg);
+  }
+}
+@keyframes flip-horizontal-bottom {
+  0% {
+    -webkit-transform: rotateX(0);
+            transform: rotateX(0);
+  }
+  100% {
+    -webkit-transform: rotateX(360deg);
+            transform: rotateX(360deg);
+  }
+}
+
+

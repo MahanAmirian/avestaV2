@@ -1,0 +1,23 @@
+LayOut Documentation
+
+The LayOut component is a React component that represents the layout of the application. It includes a navigation bar, content screens, and a footer. It serves as a container for the main content of the application.
+
+Import Statements
+
+The component imports the following modules:
+
+NavBar: Represents the navigation bar component.
+Footer: Represents the footer component.
+Screens: Represents the content screens component.
+CurrencyConverter: [Commented out] Represents a custom currency converter component.
+getHeroSectionData: [Commented out] Represents a function to fetch hero section data from an API.
+Component Structure
+
+The LayOut component is a functional component that receives a children prop. It returns a JSX structure containing the following elements:
+
+NavBar: Renders the navigation bar component.
+Screens: Renders the content screens component, which represents the main content of the application.
+Footer: Renders the footer component.
+There are additional commented-out sections in the code, which include a custom currency converter component and code related to managing the active index for scrolling through components. These sections are currently disabled and not included in the rendered output.
+
+The component is wrapped in a div element with the id attribute set to "allContent".

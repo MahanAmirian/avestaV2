@@ -1,0 +1,73 @@
+# ContactUsScreen Component
+
+The `ContactUsScreen` component is a React functional component that represents a contact us screen. It displays contact information, a Google Maps embed, a contact form, and social media links. It is designed to be used in a larger application or webpage.
+
+## Dependencies
+
+This component relies on the following dependencies:
+
+- `react-icons/ai`:
+  - `AiOutlinePhone`
+  - `AiOutlineMail`
+  - `AiFillLinkedin`
+- `react-icons/bs`:
+  - `BsWhatsapp`
+- `react-icons/ci`:
+  - `CiLocationOn`
+- `react-icons/fa`:
+  - `FaTelegramPlane`
+- `./ContactUsForm`: This is a custom component that renders a contact form.
+- `../../static/contactUsFooter.png`: This is an image file used in the component.
+- `../../layout/NavBar`: This is a custom component that renders a navigation bar.
+
+## Component Structure
+
+The `ContactUsScreen` component has the following structure:
+
+- `NavBar` component: Renders the navigation bar.
+- Container:
+  - Flex container with a row layout.
+  - Responsive and wraps elements when needed.
+  - Manages horizontal overflow.
+  - Two sections:
+    1. Left Section:
+       - Flex container with a column layout.
+       - Vertical alignment of elements.
+       - Responsive width based on screen size.
+       - Elements:
+         - Google Maps embed (iframe).
+         - `ContactUsForm` component: Renders a contact form.
+    2. Right Section:
+       - Flex container with a column layout.
+       - Vertical alignment of elements.
+       - Blue background color.
+       - Responsive width based on screen size.
+       - Elements:
+         - Contact information heading and description.
+         - Contact information details (phone, email, location).
+         - Social media links (Telegram, LinkedIn, WhatsApp).
+         - Image (contactUsFooter.png).
+
+## Usage
+
+To use the `ContactUsScreen` component, import it into your project and render it within your application or webpage. It should be placed in a parent component or route that handles routing and layout.
+
+Example usage:
+
+```jsx
+import ContactUsScreen from "./components/ContactUsScreen";
+
+function App() {
+  return (
+    <div>
+      {/* Other components */}
+      <ContactUsScreen />
+      {/* Other components */}
+    </div>
+  );
+}
+
+export default App;
+```
+
+Ensure that all the required dependencies and assets are properly imported and accessible in your project for the component to work correctly.

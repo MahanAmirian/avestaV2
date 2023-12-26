@@ -1,0 +1,25 @@
+## CurrencySection Component
+
+### Overview
+The `CurrencySection` component is responsible for displaying a table of currency data. It fetches the currency information from an API endpoint and renders it using the `CurrencyTable` component.
+
+### Dependencies
+The component imports the following modules:
+- `CurrencyTable`: This component is imported from the "./Table" file and is used to render the currency table.
+- `useState` and `useEffect`: These hooks are imported from the React library and are used to manage component state and perform side effects, respectively.
+
+### State and Effects
+The `CurrencySection` component initializes a state variable called `data` using the `useState` hook. The initial value of `data` is set to an array containing a single object that represents the default currency information for Bitcoin.
+
+The component uses the `useEffect` hook to execute a side effect when the component is initially rendered. Within the effect, an asynchronous function named `fetchData` is defined. This function sends a GET request to the specified API endpoint ("http://192.168.5.5:8000/api/currency/table/") to retrieve the currency data. The response is then converted to JSON format using the `json` method. Finally, the retrieved data is stored in the `data` state variable using the `setData` function.
+
+### Rendering
+The `CurrencySection` component renders the following JSX code:
+- A `div` container with the CSS classes "mx-auto", "pt-20", "mt-20", and "px-1". This container provides spacing and alignment for the component's content.
+- Inside the container, there is a `div` with the CSS class "mtnbala" and the "flex justify-center" CSS classes. This `div` is used to center-align the following heading element.
+- A `p` (paragraph) element with the CSS classes "text-2xl" and "font-bold". This heading displays the text "جدول ارز ها", which translates to "Currency Table" in English.
+- Another `div` with the CSS classes "chart" and "pt-10". This `div` provides spacing for the `CurrencyTable` component.
+- The `CurrencyTable` component is rendered inside the `div` mentioned above. The `data` state variable is passed as a prop to the `CurrencyTable` component, allowing it to access and display the currency information.
+
+### Export
+The `CurrencySection` component is exported as the default export of the module, making it available for other parts of the application to import and use.

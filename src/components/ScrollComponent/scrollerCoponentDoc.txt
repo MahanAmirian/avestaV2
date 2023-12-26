@@ -1,0 +1,31 @@
+## ScrollComponent
+
+### Overview
+The `ScrollComponent` is a React component that utilizes the Swiper library to create a vertical scrolling carousel. It renders a Swiper component and multiple SwiperSlide components, each containing a CardScroller component.
+
+### Dependencies
+The component imports the following modules:
+- `Swiper` and `SwiperSlide` from "swiper/react": These components are used to create the Swiper carousel and its individual slides.
+- `Autoplay`, `Pagination`, and `Navigation` from "swiper": These modules are required for configuring autoplay, pagination, and navigation functionalities in the Swiper component.
+- "swiper/css" for importing Swiper styles.
+- "swiper/css/navigation" and "swiper/css/pagination" for importing specific styles related to navigation and pagination.
+
+### Rendering
+The `ScrollComponent` component renders the following JSX code:
+- An empty fragment element (`<>...</>`) is used as a wrapper to group the Swiper component and its slides.
+- A `<br />` element is added for spacing purposes.
+- The `Swiper` component is rendered with the following props:
+  - `direction` set to "vertical" to enable vertical scrolling.
+  - `modules` array containing `Autoplay`, `Pagination`, and `Navigation` for enabling autoplay, pagination, and navigation functionalities.
+  - `mousewheel` set to `true` to enable scrolling with the mouse wheel.
+  - `autoplay` object with a `delay` of 1000ms (1 second) between slide transitions.
+  - `spaceBetween` set to 10 to add spacing between slides.
+  - `loop` set to `true` to enable looping through slides.
+  - `className` with CSS classes for styling and layout.
+  - `slidesPerView` set to 4 to determine the number of slides visible at once.
+  - `speed` set to 5000ms (5 seconds) for the transition speed between slides.
+- Multiple `SwiperSlide` components are rendered, each containing a `CardScroller` component.
+- The `CardScroller` component represents the content of each slide within the Swiper carousel.
+
+### Export
+The `ScrollComponent` component is exported as the default export of the module, allowing it to be imported and used in other parts of the application.

@@ -1,0 +1,21 @@
+SliderCommentSec Documentation
+
+The SliderCommentSec component is a React component that utilizes the Swiper library to create a slider for comment cards. It provides an interactive and visually appealing way to display comments and allows users to navigate through different comment views.
+
+The component imports Swiper and SwiperSlide components from the "swiper/react" package, as well as several modules including Navigation, Pagination, Autoplay, Controller, EffectCreative, and EffectCards from the "swiper" package.
+
+Additionally, it imports the HorizentalSlider, CommentCard, CommentProfileImg, and OpenedCommentCard components from specific files.
+
+The SliderCommentSec component uses the useState hook from React to manage the state of the isCardOpen variable. It initializes isCardOpen as true.
+
+The slideData variable is an array of arrays, representing the content for each slide in the slider. It contains JSX elements for the CommentProfileImg and OpenedCommentCard components, based on the value of isCardOpen.
+
+Within the component's return statement, a Swiper component is rendered. It configures various options and modules such as Navigation, Pagination, Autoplay, Controller, EffectCreative, and EffectCards. It also includes event handlers for onDurationChange and onSwiper.
+
+Inside the Swiper component, the slideData array is mapped to render each slide using the SwiperSlide component. Each slide contains JSX elements for CommentProfileImg and OpenedCommentCard components, arranged in a flex layout.
+
+The SliderCommentSec component has a className of "h-full w-full p-10 rounded-3xl", which specifies the styling of the slider.
+
+Finally, the SliderCommentSec component is exported as the default export of the module.
+
+Please note that this documentation provides an overview of the code's functionality without including the actual code.

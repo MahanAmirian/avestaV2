@@ -1,0 +1,15 @@
+The CommentSection component is a React functional component that represents a comment section with a swiper slider and some text. It is designed to be used in a larger application or webpage.
+
+Component Structure
+The component consists of two main sections wrapped in a container div:
+
+Swiper Slider Section
+This section occupies the left portion of the container.
+It is rendered using the SwiperSlideCustome component.
+The width of this section varies based on the screen size.
+The height of this section is determined by the content.
+Text Section
+This section occupies the right portion of the container.
+It contains three text elements that display the heading for the comment section.
+The width of this section varies based on the screen size.
+The height of this section is determined by the content.

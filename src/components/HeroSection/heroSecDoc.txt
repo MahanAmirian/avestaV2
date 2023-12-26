@@ -1,0 +1,26 @@
+## HeroSection Component
+
+### Overview
+The `HeroSection` component represents a hero section of a webpage. It displays a heading, a paragraph, and a set of images. The main image can be changed by clicking on the smaller images.
+
+### Dependencies
+The component imports the following modules and assets:
+- `heroStyle.css`: This CSS file contains styles specific to the `HeroSection` component.
+- `image1`, `image2`, `image3`, `image4`, `image5`, `image6`: These images are imported from their respective paths in the project's static folder.
+- `useState`: This hook is imported from the React library and is used to manage component state.
+
+### State and Image Change Functions
+The `HeroSection` component uses the `useState` hook to declare a state variable named `mainImgHero`. It is initialized with the image `image5`.
+
+The component defines several functions to handle the image change events. Each function corresponds to a different smaller image and updates the `mainImgHero` state variable accordingly. For example, `changeMainPic1` changes the `mainImgHero` state to `image1` when called.
+
+### Rendering
+The `HeroSection` component renders the following JSX code:
+- A `div` container with the CSS classes "flex", "flex-row", "h-full", "xs:flex-wrap", "sm:flex-wrap", "md:flex-wrap", "lg:flex-nowrap", "container", "mx-auto", and "mb-10". This container provides layout and spacing for the component's content.
+- Inside the container, there is a `div` with the CSS classes "flex", "flex-col", and "gap-10". This `div` contains the text content of the hero section, including a heading and a paragraph. The heading has varying font sizes based on screen sizes.
+- Another `div` with the CSS classes "imageSection", "xs:w-full", "md:w-full", "xs:hidden", "h-screen", "lg:p-0", "sm:hidden", "md:flex", "flex", "justify-around", and "items-center". This `div` contains the image section of the hero section, including a set of smaller images and the main image.
+- Inside the `imageSection` div, there are two nested `div` elements. The first `div` contains a set of smaller images, each wrapped in a `div` with a click event handler to change the main image when clicked. The second `div` contains the main image, which is displayed based on the `mainImgHero` state variable.
+- Finally, there is a closing `div` for the outermost container.
+
+### Export
+The `HeroSection` component is exported as the default export of the module, making it available for other parts of the application to import and use.

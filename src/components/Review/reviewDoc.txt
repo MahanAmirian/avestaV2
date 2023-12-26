@@ -1,0 +1,19 @@
+## ReviewSection Component
+
+### Overview
+The `ReviewSection` component represents a section of a webpage dedicated to displaying reviews and comments. It consists of a `CommentSection` component and text content related to reviews and the website.
+
+### Dependencies
+The component imports the following module:
+- `CommentSection`: This component is imported from the "../CommentSection" file and is responsible for rendering the comment section.
+
+### Rendering
+The `ReviewSection` component renders the following JSX code:
+- A `div` container with the CSS classes "flex", "flex-row", "h-screen", "container", "mx-auto", and "rounded-3xl". This container provides layout and spacing for the component's content.
+- Inside the container, there are two nested `div` elements. The first `div` has the CSS class "w-full" and contains the `CommentSection` component. This component is responsible for rendering the comment section.
+- The second `div` has the CSS classes "w-3/5", "text-gray-800", "my-auto", "flex", "flex-col", "gap-10", and "py-10". This `div` contains text content related to reviews and the website.
+- Inside the second `div`, there is an `h1` element with the CSS classes "font-bold", "lg:text-5xl", "md:text-3xl", "sm:text-lg", "text-start", "flex", "flex-col", and "gap-8". This heading consists of multiple lines, each wrapped in a `div` element. The lines display text related to reviews and the website, with certain keywords styled in a different color using inline CSS.
+- Following the `h1` element, there is a `p` element with the CSS classes "font-extrabold" and "sm:pl-0". This paragraph contains additional information about the website, displayed in a bold font.
+
+### Export
+The `ReviewSection` component is exported as the default export of the module, making it available for other parts of the application to import and use.

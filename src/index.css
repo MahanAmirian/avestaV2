@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    direction: rtl;
+}
+/* .heroSec{
+    background-image: url(./static/HeroPic.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+} */

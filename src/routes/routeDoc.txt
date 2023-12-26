@@ -1,0 +1,75 @@
+Routes Documentation
+
+The `routes` file is used to define the routes of the application. It provides a list of objects, each representing a specific route with its corresponding component.
+
+Import Statements
+The file imports the following modules:
+- `LayOut`: Represents the layout component.
+- `CurrencySection`: Represents the currency section component.
+- `Footer`: Represents the footer component.
+- `Screens`: Represents the screens component.
+- `NewsPage`: Represents the news page component.
+- `About`: Represents the about section component.
+- `Serviceha`: Represents the service section component.
+- `NewsAndBlogs`: Represents the news and blogs component.
+- `ContactUsScreen`: Represents the contact us screen component.
+
+Route Configuration
+The `routes` variable is an array that defines the routes of the application. Each route is represented as an object with two properties:
+- `path`: Specifies the URL path for the route.
+- `element`: Represents the component associated with the route.
+
+The routes are configured as follows:
+
+- Route 1: Path: "/", Element: `<LayOut />`
+  - This route corresponds to the root path of the application and renders the `LayOut` component.
+
+- Route 2: Path: "/CurrencySection", Element: `<CurrencySection />`
+  - This route corresponds to the "/CurrencySection" path and renders the `CurrencySection` component.
+
+- Route 3: Path: "/Footer", Element: `<Footer />`
+  - This route corresponds to the "/Footer" path and renders the `Footer` component.
+
+- Route 4: Path: "/screens", Element: `<Screens />`
+  - This route corresponds to the "/screens" path and renders the `Screens` component.
+
+- Route 5: Path: "/news", Element: `<NewsPage />`
+  - This route corresponds to the "/news" path and renders the `NewsPage` component.
+
+- Route 6: Path: "/About", Element: `<About />`
+  - This route corresponds to the "/About" path and renders the `About` component.
+
+- Route 7: Path: "/Service", Element: `<Serviceha />`
+  - This route corresponds to the "/Service" path and renders the `Serviceha` component.
+
+- Route 8: Path: "/NewsAndBlogs", Element: `<NewsAndBlogs />`
+  - This route corresponds to the "/NewsAndBlogs" path and renders the `NewsAndBlogs` component.
+
+- Route 9: Path: "/ContactUs", Element: `<ContactUsScreen />`
+  - This route corresponds to the "/ContactUs" path and renders the `ContactUsScreen` component.
+
+Usage
+To use the `routes` configuration, you can import it into your application's routing system, such as React Router, and define the routes accordingly. Each route should be associated with its respective component.
+
+Example usage with React Router:
+
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import routes from "./routes";
+
+function App() {
+  return (
+    <Router>
+      <Switch>
+        {routes.map((route, index) => (
+          <Route key={index} path={route.path} exact>
+            {route.element}
+          </Route>
+        ))}
+      </Switch>
+    </Router>
+  );
+}
+
+In the above example, the `routes` array is iterated over to create the corresponding `<Route>` components, each with its respective path and associated element/component.
+
+Please note that the above usage example assumes the use of React Router for routing. Adjustments may be needed based on the specific routing library or setup in your application.
