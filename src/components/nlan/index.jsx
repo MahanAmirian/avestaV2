@@ -22,7 +22,8 @@ const Nlam = () => {
         </div>
       </div>
       {/* ... additional cards ... */}
-      <div className="flex flex-col md:flex-row items-center justify-center md:justify-between mx-4 md:mx-40 gap-4 md:gap-80">
+      <div className="flex flex-col md:flex-row-reverse items-center justify-center lg:flex-row-reverse md:justify-between mx-4 md:mx-40 gap-4 md:gap-80 ">
+        <img alt="Sample" className="w-72 h-50" src={Personalremittance} />
         <div>
           <p className="text-2xl">حواله های شخصی</p>
           <p>
@@ -30,7 +31,6 @@ const Nlam = () => {
             المللی شما را انجام می دهد.
           </p>
         </div>
-        <img alt="Sample" className="w-72 h-50" src={Personalremittance} />
       </div>
       {/*  */}
       <div className="flex flex-col md:flex-row items-center justify-center md:justify-between mx-4 md:mx-40 gap-4 md:gap-80">
@@ -45,7 +45,8 @@ const Nlam = () => {
         </div>
       </div>
       {/*  */}
-      <div className="flex flex-col md:flex-row items-center justify-center md:justify-between mx-4 md:mx-40 gap-4 md:gap-80">
+      <div className="flex flex-col md:flex-row-reverse items-center justify-center lg:flex-row-reverse md:justify-between mx-4 md:mx-40 gap-4 md:gap-80">
+        <img alt="Sample" className="w-72 h-50" src={Crypto} />
         <div>
           <p className="text-2xl">ارزهای دیجیتال</p>
           <p>
@@ -53,7 +54,6 @@ const Nlam = () => {
             ارزهای دیجیتال محبوب مانند بیت کوین و اتریوم و تتر تبدیل کنید.
           </p>
         </div>
-        <img alt="Sample" className="w-72 h-50" src={Crypto} />
       </div>
       {/*  */}
       <div className="flex flex-col md:flex-row items-center justify-center md:justify-between mx-4 md:mx-40 gap-4 md:gap-80">
@@ -68,7 +68,8 @@ const Nlam = () => {
         </div>
       </div>
       {/*  */}
-      <div className="flex flex-col md:flex-row items-center justify-center md:justify-between mx-4 md:mx-40 gap-4 md:gap-80">
+      <div className="flex flex-col md:flex-row-reverse items-center justify-center lg:flex-row-reverse md:justify-between mx-4 md:mx-40 gap-4 md:gap-80">
+        <img alt="Sample" className="w-72 h-50" src={Advice} />
         <div>
           <p className="text-2xl">مشاوره مالی و سرمایه گذاری</p>
           <p>
@@ -77,11 +78,9 @@ const Nlam = () => {
             انتقال سرمایه و سرمایه گذاری در کشور کانادا تصمیم گیری نمایند.
           </p>
         </div>
-        <img alt="Sample" className="w-72 h-50" src={Advice} />
       </div>
     </div>
   );
 };
 
 export default Nlam;
-
